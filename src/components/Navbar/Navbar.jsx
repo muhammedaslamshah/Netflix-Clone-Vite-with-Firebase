@@ -10,8 +10,7 @@ const Navbar = () => {
   return (
     //Navbar
     <div className="navbar">
-      {/* Navbar left side */}
-      
+      {/* Navbar Left Side Start */}
       <div className="navbar-left">
         {/* Netflix Logo Img */}
         <img src={logo} alt="" />
@@ -24,8 +23,9 @@ const Navbar = () => {
           <li>Browse by Languages</li>
         </ul>
       </div>
+      {/* Navbar Left Side End */}
 
-      {/* Navbar Right side */}
+      {/* Navbar Left Right Start */}
       <div className="navbar-right">
         <img src={search_icon} alt="" className="icons" />
         <p>Children</p>
@@ -33,8 +33,13 @@ const Navbar = () => {
         <div className="navbar-profile">
           <img src={profile_img} alt="" className="profile" />
           <img src={caret_icon} alt="" />
+
+          <div className="dropdown">
+            <p>Sign Out of Netflix</p>
+          </div>
         </div>
       </div>
+      {/* Navbar Left Right End */}
     </div>
   );
 };
