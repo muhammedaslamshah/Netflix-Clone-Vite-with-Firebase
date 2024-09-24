@@ -85,7 +85,7 @@
   cursor: pointer;
 }
 
-.login-spinner{
+.login_spinner{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -93,6 +93,16 @@
   justify-content: center;
 }
 
-.login-spinner img{
+.login_spinner img{
   width: 60px;
+}
+
+@media (max-width: 500px) {
+  .login{
+    padding: 15px 5%;
+  }
+  .login-form{
+    padding: 20px;
+    margin-top: 30px;
+  }
 }
